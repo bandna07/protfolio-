@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f8f9fa;
+        color: #343a40;
+    }
+    
+    header {
+        background: #007bff;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+    
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .project-card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+        width: 300px;
+    }
+    
+    .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    .project-card img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .project-info {
+        padding: 20px;
+    }
+    
+    .project-info h2 {
+        margin: 0 0 10px;
+        font-size: 1.5em;
+        color: #007bff;
+    }
+    
+    .project-info p {
+        font-size: 1em;
+        margin: 0 0 15px;
+    }
+    
+    .project-link {
+        background: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background 0.3s;
+    }
+    
+    .project-link:hover {
+        background: #0056b3;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+    </header>
+    <div class="projects-container">
+        <div class="project-card">
+            <img src="project1.jpg" alt="Project 1">
+            <div class="project-info">
+                <h2>Project Title 1</h2>
+                <p>A brief description of Project 1.</p>
+                <a href="https://bandna07.github.io/Travel-Page/" class="project-link">View Project</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="project2.jpg" alt="Project 2">
+            <div class="project-info">
+                <h2>Project Title 2</h2>
+                <p>A brief description of Project 2.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+        </div>
+        <!-- Add more project cards as needed -->
+    </div>
+</body>
+</html>
